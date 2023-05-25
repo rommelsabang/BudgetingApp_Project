@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTransaction">
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/date_picker_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note_textview"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="Note"
+        app:layout_constraintEnd_toStartOf="@+id/note_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_textview" />
+
+    <TextView
+        android:id="@+id/env_textview"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="Envelope"
+        app:layout_constraintEnd_toStartOf="@+id/env_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_textview" />
+
+    <TextView
+        android:id="@+id/account_textview"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="Account"
+        app:layout_constraintEnd_toStartOf="@+id/account_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/env_textview" />
+
+    <TextView
+        android:id="@+id/amount_textview"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="Amount"
+        app:layout_constraintEnd_toStartOf="@+id/amount_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_textview" />
+
+    <EditText
+        android:id="@+id/note_edit"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ex: Guitar Class (optional)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/note_textview"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker_button" />
+
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:text="JAN 01 2022"
+        android:textColor="@color/material_dynamic_neutral60"
+        style="?android:spinnerStyle"
+        android:backgroundTint="@color/design_default_color_background"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/date_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+    <Spinner
+        android:id="@+id/env_spinner"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/env_textview"
+        app:layout_constraintTop_toBottomOf="@+id/note_edit" />
+
+    <Spinner
+        android:id="@+id/account_spinner"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/account_textview"
+        app:layout_constraintTop_toBottomOf="@+id/env_spinner" />
+
+    <EditText
+        android:id="@+id/amount_edit"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/amount_textview"
+        app:layout_constraintTop_toBottomOf="@+id/account_spinner" />
+
+    <Button
+        android:id="@+id/add_transaction_button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <CheckBox
+        android:id="@+id/incomeCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income?"
+        app:layout_constraintStart_toEndOf="@+id/amount_textview"
+        app:layout_constraintTop_toBottomOf="@+id/amount_edit" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#750303"
+        android:text="Delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/add_transaction_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_transaction_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

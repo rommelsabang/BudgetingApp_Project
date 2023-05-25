@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="First"
+        android:textSize="10sp"></TextView>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Second"
+        android:textSize="11sp"></TextView>
+
+    <TextView
+        android:id="@+id/envelope"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Third"
+        android:textSize="10sp"></TextView>
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Fourth"
+        android:textSize="10sp"></TextView>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1.2"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Fifth"
+        android:textSize="14sp"
+        android:textStyle="bold"></TextView>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6D4FF"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="373dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96">
+        <TextView
+            android:id="@+id/types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="152dp"
+            android:text="Types"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/balanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="94dp"
+            android:text="Balance"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chequing"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="180dp"
+            android:background="#ACABAB"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:text="Chequing                             $4,324.01"
+            android:textColor="@android:color/secondary_text_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/saving"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="6dp"
+            android:background="#ACABAB"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:text="Savings                                $2,232.72"
+            android:textColor="@android:color/secondary_text_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chequing" />
+
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="6dp"
+            android:background="#ACABAB"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:text="Credit Available                   $989.52"
+            android:textColor="@android:color/secondary_text_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saving" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

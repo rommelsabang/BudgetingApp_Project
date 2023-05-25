@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Envelopes>
+	<Envelope id="1">
+		<Budget>1500</Budget>
+		<Name>Groceries</Name>
+		<Color>FF00FF00</Color>
+		<Transactions>
+			<Transaction id="1">
+				<Amount>50.70</Amount>
+				<Date>29-11-22</Date>
+				<Account>RBC</Account>
+				<Note>Save On Foods</Note>
+			</Transaction>
+			<Transaction id="2">
+				<Amount>32.45</Amount>
+				<Date>30-11-22</Date>
+				<Account>Scotiabank</Account>
+				<Note>Safeway</Note>
+			</Transaction>
+		</Transactions>
+	</Envelope>
+	<Envelope id="2">
+		<Budget>500</Budget>
+		<Name>Transportation</Name>
+		<Color>FFFF0000</Color>
+		<Transactions>
+			<Transaction id="1">
+				<Amount>80.50</Amount>
+				<Date>19-11-22</Date>
+				<Account>RBC</Account>
+				<Note>Gas</Note>
+			</Transaction>
+			<Transaction id="2">
+				<Amount>52.45</Amount>
+				<Date>30-11-22</Date>
+				<Account>Scotiabank</Account>
+				<Note>Gas</Note>
+			</Transaction>
+		</Transactions>
+	</Envelope>
+</Envelopes>

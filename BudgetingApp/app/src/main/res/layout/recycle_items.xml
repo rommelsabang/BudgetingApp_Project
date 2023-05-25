@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_dynamic_neutral90">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        tools:text="Note" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginLeft="32dp"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/envelope"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/note"
+        tools:text="Envelope" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/envelope"
+        tools:text="Amount" />
+    
+
+
+</RelativeLayout>
