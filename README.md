@@ -1,31 +1,15 @@
-# COSC 341 Group 3 - Budgeting App
+# Budgeting Application Project [Human Computer Interaction]
 
-## TODO
+## Description
 
-- [x] Dashboard - Rev
-  - [x] Route to dashboard
-- [x] Envelopes - Brock
-  - [x] Read in transactions (total balance)
-- [x] Acccounts - Erfan
-- [x] Transactions - Esteban
-  - [x] Read transactions
-  - [x] Write transaction
-    - [x] Better Date picker
-  - [x] Edit/Delete transaction
-- [x] Reports - Rommel
+This project focused on principles of design and interaction of software. This includes, multidimensional data visualization techniques, interaction techniques, and intelligent user interfaces. The objective was to become more familiar of popular research and industry relevant areas within Human Computer Interaction.
 
-- [ ] Menu
-  - [ ] Drawer not showing up on some activities
+The system developed was a budgeting app, that is based on the "envelope" budgeting system. Users are able to create, edit, and delete envelopes with specific budgets, input and edit transactions, and create and edit accounts. This project allowed me to gain valuable knowledge on the process of user-centered design, and usability testing while going through the development of the application from idea to product. The application was developed with Java in Android Studio.
 
-## Further Evaluation
+The main code and activites can be found in [here](BudgetingApp/app/src/main/java/com/example/budgetingapp)
 
-- Meyz:
-  - Add share/export pdf of reports
-  - On Envelopes page, textview positions need to adjust.
-  - On the Account page, change the buttons so that users can understand that they will
-- Mahid
-  - Add more details for the quick add button so that users understand what the button is for
-  - On the transactions page, add a sort button based on different factors
-- Sana:
-  - On the new transactions, for the date, the drop-down menu is easier for the user
-  - On the account page, there is no need for the show all button; the app can show all the transactions in a simple window with a scroll bar.
+### Some snapshots from the application
+
+![picture1](imgs/picture_1.png)
+![picture1](imgs/picture_2.png)
+![picture1](imgs/picture_3.png)
